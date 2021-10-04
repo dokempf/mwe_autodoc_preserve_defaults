@@ -17,9 +17,9 @@ sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Pokédex'
-copyright = '2021, melissawm'
-author = 'melissawm'
+project = 'mwe-autodoc_preserve_defaults'
+copyright = '2021, Dominic Kempf'
+author = 'Dominic Kempf'
 
 
 # -- General configuration ---------------------------------------------------
@@ -27,10 +27,7 @@ author = 'melissawm'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ 'sphinx.ext.autodoc',
-               'sphinx.ext.doctest',
-               'sphinx.ext.intersphinx'
-              ]
+extensions = [ 'sphinx.ext.autodoc' ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -53,5 +50,4 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Set up intersphinx maps
-intersphinx_mapping = {'numpy': ('https://numpy.org/doc/stable', None)}
+autodoc_preserve_defaults = True
